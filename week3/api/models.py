@@ -74,7 +74,7 @@ class Task(models.Model):
 
     class Meta:
         db_table = 'task'
-        unique_together = ('block', 'order', )
+        # unique_together = ('block', 'order', )
         ordering = ('block', 'order', )
 
     def __str__(self):
